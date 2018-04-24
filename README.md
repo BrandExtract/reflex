@@ -67,7 +67,7 @@ The fork will be kept in sync with upstream as close as possible, but may omit f
 
 Current differences:
 
-- Some helpers that do not have fallbacks ar omitted.
+- Some helpers that do not have fallbacks are omitted.
 - No vendor prefixes, we recommend using Autoprefixer.
 - Added `.col-*-offset-*` classes to increase the left margin of the columns.
 - Added `.col-*-push-*` and `.col-*-pull-*` classes to rearrange the order of the columns.
