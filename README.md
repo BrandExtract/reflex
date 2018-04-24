@@ -23,7 +23,7 @@ Where flexbox isn't supported, your basic grid structure will remain intact and 
 - Supports semantic elements e.g. you can use ul as a grid
 - Supports nested grids
 - Good cross browser support
-- Built with Sass/SCSS
+- Built with Sass/SCSS and LESS
 - Easily customizable and extendable
 
 ## Intended use
@@ -59,5 +59,17 @@ This is version 2 of reflex grid and is not compatible with version 1. Many thin
 - Added better support for "cards" as well as some example code
 - Is now only built with SCSS. Older versions had both LESS and SCSS implementations but this was too much to support.
 
+## LESS version information
 
+This fork adds LESS source files.  The changes were brought in from [sntran's fork](https://github.com/sntran/reflex) just including ordering support.
 
+The fork will be kept in sync with upstream as close as possible, but may omit features.
+
+Current differences:
+
+- Some helpers that do not have fallbacks ar omitted.
+- No vendor prefixes, we recommend using Autoprefixer.
+- Added `.col-*-offset-*` classes to increase the left margin of the columns.
+- Added `.col-*-push-*` and `.col-*-pull-*` classes to rearrange the order of the columns.
+- Added `.visible-*-*` classes to reset the display style on certain breakpoint.
+- Added CSS custom properties for grid variables.
